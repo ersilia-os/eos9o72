@@ -43,12 +43,19 @@ _10 of 2048 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9o72](https://hub.docker.com/r/ersiliaos/eos9o72)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `68`
 - **Environment Size (Mb):** `6085`
+- **Image Size (Mb):** `6024.07`
 
+**Computational Performance (seconds):**
+- 10 inputs: `31.34`
+- 100 inputs: `23.2`
+- 10000 inputs: `385.06`
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
