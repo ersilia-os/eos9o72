@@ -2,6 +2,7 @@
 
 CheMeleon is a molecular foundation model pre-trained on deterministic molecular descriptors from the Mordred package, leveraging a Directed Message-Passing Neural Network to predict these descriptors in a noise-free setting.
 
+This model was incorporated on 2025-07-01.
 
 ## Information
 ### Identifiers
@@ -42,8 +43,11 @@ _10 of 2048 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `68`
+- **Environment Size (Mb):** `6085`
 
 
 ### References
