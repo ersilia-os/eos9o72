@@ -35,7 +35,7 @@ with open(input_file, "r") as f:
 # Load model for evaluation
 featurizer = featurizers.SimpleMoleculeMolGraphFeaturizer()
 agg = nn.MeanAggregation()
-chemeleon_mp = torch.load("../checkpoints/chemeleon_mp.pt", weights_only=True)
+chemeleon_mp = torch.load(os.path.join(root, "..", "..", "checkpoints", "chemeleon_mp.pt"), weights_only=True)
 mp = nn.BondMessagePassing(**chemeleon_mp['hyper_parameters'])
 mp.load_state_dict(chemeleon_mp['state_dict'])
 model = MPNN(message_passing=mp, agg=agg, predictor=RegressionFFN())
