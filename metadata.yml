@@ -32,3 +32,6 @@ Publication: https://arxiv.org/abs/2506.15792
 Source Code: https://github.com/JacksonBurns/chemeleon/tree/main
 License: MIT
 Incorporation Date: '2025-07-01'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip
+Model Size: 68.0
+Environment Size: 6085.0
