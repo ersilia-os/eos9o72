@@ -1,6 +1,6 @@
 Identifier: eos9o72
 Slug: chemeleon
-Status: In progress
+Status: Ready
 Title: CheMeleon embeddings
 Description: CheMeleon is a molecular foundation model pre-trained on 
   deterministic molecular descriptors from the Mordred package, leveraging a 
@@ -33,5 +33,15 @@ Source Code: https://github.com/JacksonBurns/chemeleon/tree/main
 License: MIT
 Incorporation Date: '2025-07-01'
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos9o72
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 68.0
 Environment Size: 6085.0
+Image Size: 6024.07
+Computational Performance 1: 31.34
+Computational Performance 2: 21.39
+Computational Performance 3: 23.2
+Computational Performance 4: 88.66
+Computational Performance 5: 385.06
