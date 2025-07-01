@@ -1,7 +1,7 @@
 Identifier: eos9o72
 Slug: chemeleon
 Status: In progress
-Title: CheMeleon
+Title: CheMeleon embeddings
 Description: CheMeleon is a molecular foundation model pre-trained on deterministic
   molecular descriptors from the Mordred package, leveraging a Directed Message-Passing
   Neural Network to predict these descriptors in a noise-free setting.
