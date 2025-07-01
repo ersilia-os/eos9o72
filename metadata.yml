@@ -2,31 +2,33 @@ Identifier: eos9o72
 Slug: chemeleon
 Status: In progress
 Title: CheMeleon embeddings
-Description: CheMeleon is a molecular foundation model pre-trained on deterministic
-  molecular descriptors from the Mordred package, leveraging a Directed Message-Passing
-  Neural Network to predict these descriptors in a noise-free setting.
+Description: CheMeleon is a molecular foundation model pre-trained on 
+  deterministic molecular descriptors from the Mordred package, leveraging a 
+  Directed Message-Passing Neural Network to predict these descriptors in a 
+  noise-free setting.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Representation
 Subtask: Featurization
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Descriptor
+  - Descriptor
 Output Dimension: 2048
 Output Consistency: Fixed
-Interpretation: 'Vector representation of a molecule'
+Interpretation: Vector representation of a molecule
 Tag:
-- Embedding
+  - Embedding
 Biomedical Area:
-- Any
+  - Any
 Target Organism:
-- Not Applicable
+  - Not Applicable
 Publication Type: Preprint
 Publication Year: 2025
 Publication: https://arxiv.org/abs/2506.15792
 Source Code: https://github.com/JacksonBurns/chemeleon/tree/main
 License: MIT
+Incorporation Date: '2025-07-01'
