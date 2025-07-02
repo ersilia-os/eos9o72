@@ -50,12 +50,12 @@ _10 of 2048 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `34`
 - **Environment Size (Mb):** `6085`
-- **Image Size (Mb):** `6024.07`
+- **Image Size (Mb):** `6024.08`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.34`
-- 100 inputs: `23.2`
-- 10000 inputs: `385.06`
+- 10 inputs: `30.62`
+- 100 inputs: `23.04`
+- 10000 inputs: `367.18`
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
