@@ -9,6 +9,7 @@ from chemprop.data import BatchMolGraph
 from chemprop.nn import RegressionFFN
 from chemprop.models import MPNN
 import torch
+from chemeleon_fingerprint import CheMeleonFingerprint
 
 # parse arguments
 input_file = sys.argv[1]
@@ -19,30 +20,17 @@ root = os.path.dirname(os.path.abspath(__file__))
 
 # for extra info, check this issue https://github.com/JacksonBurns/chemeleon/issues/16
 
-@torch.no_grad
-def chemeleon_fingerprint(smiles: list[str], model: MPNN, featurizer: featurizers.SimpleMoleculeMolGraphFeaturizer):  # i.e. get_embeddings
-    bmg = BatchMolGraph([featurizer(MolFromSmiles(s)) for s in smiles])
-    bmg.to(device=model.device)
-    return model.fingerprint(bmg).numpy(force=True)
-
-
 # read SMILES from .csv file, assuming one column with header
 with open(input_file, "r") as f:
     reader = csv.reader(f)
     next(reader)  # skip header
     smiles_list = [r[0] for r in reader]
 
-# Load model for evaluation
-featurizer = featurizers.SimpleMoleculeMolGraphFeaturizer()
-agg = nn.MeanAggregation()
-chemeleon_mp = torch.load(os.path.join(root, "..", "..", "checkpoints", "chemeleon_mp.pt"), weights_only=True)
-mp = nn.BondMessagePassing(**chemeleon_mp['hyper_parameters'])
-mp.load_state_dict(chemeleon_mp['state_dict'])
-model = MPNN(message_passing=mp, agg=agg, predictor=RegressionFFN())
-model.eval()
-
 # Run model
-outputs = chemeleon_fingerprint(smiles_list, model, featurizer)
+# outputs = chemeleon_fingerprint(smiles_list, model, featurizer)
+
+chemeleon_fingerprint = CheMeleonFingerprint()
+outputs = chemeleon_fingerprint(smiles_list)
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
