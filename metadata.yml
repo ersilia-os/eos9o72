@@ -32,6 +32,8 @@ Publication: https://arxiv.org/abs/2506.15792
 Source Code: https://github.com/JacksonBurns/chemeleon/tree/main
 License: MIT
 Incorporation Date: '2025-07-01'
+Last Packaging Date: '2025-08-29'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos9o72
 Docker Architecture:
@@ -39,9 +41,9 @@ Docker Architecture:
   - ARM64
 Model Size: 34.0
 Environment Size: 7431.0
-Image Size: 6024.08
-Computational Performance 1: 30.62
-Computational Performance 2: 20.68
-Computational Performance 3: 23.04
-Computational Performance 4: 86.26
-Computational Performance 5: 367.18
+Image Size: 7383.86
+Computational Performance 1: 31.4
+Computational Performance 2: 21.43
+Computational Performance 3: 23.87
+Computational Performance 4: 87.35
+Computational Performance 5: 375.77
