@@ -4,6 +4,7 @@ CheMeleon is a molecular foundation model pre-trained on deterministic molecular
 
 This model was incorporated on 2025-07-01.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos9o72`
@@ -13,7 +14,7 @@ This model was incorporated on 2025-07-01.
 - **Task:** `Representation`
 - **Subtask:** `Featurization`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Embedding`
 
 ### Input
