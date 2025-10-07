@@ -2,6 +2,9 @@
 import os
 import csv
 import sys
+import json
+import struct
+import numpy as np
 from chemeleon_fingerprint import CheMeleonFingerprint
 
 # parse arguments
