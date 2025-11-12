@@ -2,7 +2,7 @@
 
 CheMeleon is a molecular foundation model pre-trained on deterministic molecular descriptors from the Mordred package, leveraging a Directed Message-Passing Neural Network to predict these descriptors in a noise-free setting.
 
-This model was incorporated on 2025-07-01.Last packaged on 2025-08-29.
+This model was incorporated on 2025-07-01.Last packaged on 2025-11-12.
 
 ## Information
 ### Identifiers
@@ -50,12 +50,12 @@ _10 of 2048 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `34`
 - **Environment Size (Mb):** `7677`
-- **Image Size (Mb):** `7383.86`
+- **Image Size (Mb):** `7650.98`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.4`
-- 100 inputs: `23.87`
-- 10000 inputs: `375.77`
+- 10 inputs: `32.43`
+- 100 inputs: `25.15`
+- 10000 inputs: `384.66`
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
