@@ -1,3 +1,4 @@
 python: "3.11"
 commands:
     - ["pip", "chemprop", "2.2.0"]
+    - ["pip", "ersilia-pack-utils", "0.1.5"]
