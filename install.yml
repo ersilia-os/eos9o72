@@ -1,4 +1,5 @@
 python: "3.11"
 commands:
+    - ["pip", "torch", "2.10.0", "--index-url", "https://download.pytorch.org/whl/cpu"]
     - ["pip", "chemprop", "2.2.0"]
     - ["pip", "ersilia-pack-utils", "0.1.5"]
