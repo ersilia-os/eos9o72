@@ -33,7 +33,7 @@ Source Code: https://github.com/JacksonBurns/chemeleon/tree/main
 License: MIT
 Incorporation Date: '2025-07-01'
 Last Packaging Date: '2026-02-10'
-Release: v1.1.0
+Release: v1.1.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos9o72
 Docker Architecture:
