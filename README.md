@@ -59,7 +59,7 @@ _10 of 2048 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
-- **Publication**: [https://arxiv.org/abs/2506.15792](https://arxiv.org/abs/2506.15792)
+- **Publication**: [https://doi.org/10.48550/arXiv.2506.15792](https://doi.org/10.48550/arXiv.2506.15792)
 - **Publication Type:** `Preprint`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [arnaucoma24](https://github.com/arnaucoma24)
