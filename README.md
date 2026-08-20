@@ -1,6 +1,6 @@
 # CheMeleon embeddings
 
-CheMeleon is a molecular foundation model pre-trained on deterministic molecular descriptors from the Mordred package, leveraging a Directed Message-Passing Neural Network to predict these descriptors in a noise-free setting.
+CheMeleon encodes a molecule into 2,048 features by pretraining a graph network to reproduce computed molecular descriptors rather than to reconstruct masked structure. Burns and colleagues at MIT argued that descriptors already condense decades of chemical understanding, so training a network to predict them yields a representation grounded in known chemistry while remaining learnable. The resulting embedding performed strongly across property prediction benchmarks and needs no labelled data to produce.
 
 This model was incorporated on 2025-07-01.Last packaged on 2026-02-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-07-01.Last packaged on 2026-02-10.
 ### Output
 - **Output Dimension:** `2048`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Vector representation of a molecule
+- **Interpretation:** 2048 features encoding molecular structure from a descriptor-pretrained foundation model.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -59,9 +59,9 @@ _10 of 2048 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
-- **Publication**: [https://doi.org/10.48550/arXiv.2506.15792](https://doi.org/10.48550/arXiv.2506.15792)
-- **Publication Type:** `Preprint`
-- **Publication Year:** `2025`
+- **Publication**: [https://doi.org/10.1021/acs.jcim.6c01546](https://doi.org/10.1021/acs.jcim.6c01546)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2026`
 - **Ersilia Contributor:** [arnaucoma24](https://github.com/arnaucoma24)
 
 ### License
