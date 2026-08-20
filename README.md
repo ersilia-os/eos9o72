@@ -1,6 +1,6 @@
 # CheMeleon embeddings
 
-CheMeleon encodes a molecule into 2,048 features by pretraining a graph network to reproduce computed molecular descriptors rather than to reconstruct masked structure. Burns and colleagues at MIT argued that descriptors already condense decades of chemical understanding, so training a network to predict them yields a representation grounded in known chemistry while remaining learnable. The resulting embedding performed strongly across property prediction benchmarks and needs no labelled data to produce.
+CheMeleon is a molecular foundation model pre-trained on deterministic molecular descriptors from the Mordred package, leveraging a Directed Message-Passing Neural Network to predict these descriptors in a noise-free setting.
 
 This model was incorporated on 2025-07-01.Last packaged on 2026-02-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-07-01.Last packaged on 2026-02-10.
 ### Output
 - **Output Dimension:** `2048`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 2048 features encoding molecular structure from a descriptor-pretrained foundation model.
+- **Interpretation:** Vector representation of a molecule
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
