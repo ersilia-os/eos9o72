@@ -2,13 +2,14 @@ Identifier: eos9o72
 Slug: chemeleon
 Status: Ready
 Title: CheMeleon embeddings
-Description: CheMeleon encodes a molecule into 2,048 features by pretraining a graph
-  network to reproduce computed molecular descriptors rather than to reconstruct masked
-  structure. Burns and colleagues at MIT argued that descriptors already condense
-  decades of chemical understanding, so training a network to predict them yields
-  a representation grounded in known chemistry while remaining learnable. The resulting
-  embedding performed strongly across property prediction benchmarks and needs no
-  labelled data to produce.
+Description: CheMeleon encodes a molecule as 2,048 features with a directed message-passing
+  neural network pretrained to reproduce deterministic Mordred descriptors for roughly
+  a million PubChem molecules, a noise-free target rather than masked structure or
+  experimental labels. Burns and colleagues at MIT reasoned that descriptors already
+  carry low-noise chemical information, so predicting them gives a representation
+  grounded in known chemistry while remaining learnable. It won most of 58 Polaris
+  and MoleculeACE benchmarks but, like the models compared against it, still fails
+  to resolve activity cliffs.
 Deployment:
   - Local
 Source: Local
