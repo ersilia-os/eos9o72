@@ -50,10 +50,17 @@ class CheMeleonFingerprint:
         if device is not None:
             self.model.to(device=device)
 
-    def __call__(self, molecules: list[str | Mol]) -> np.ndarray:
-        bmg = BatchMolGraph([self.featurizer(MolFromSmiles(m) if isinstance(m, str) else m) for m in molecules])
-        bmg.to(device=self.model.device)
-        return self.model.fingerprint(bmg).numpy(force=True)
+    def __call__(self, molecules: list[str | Mol], batch_size: int = 64) -> np.ndarray:
+        # inference_mode stops autograd from storing activations, and batching keeps
+        # peak memory constant instead of growing with the number of molecules
+        outputs = []
+        with torch.inference_mode():
+            for i in range(0, len(molecules), batch_size):
+                chunk = molecules[i:i + batch_size]
+                bmg = BatchMolGraph([self.featurizer(MolFromSmiles(m) if isinstance(m, str) else m) for m in chunk])
+                bmg.to(device=self.model.device)
+                outputs.append(self.model.fingerprint(bmg).numpy(force=True))
+        return np.concatenate(outputs)
 
 
 if __name__ == "__main__":
