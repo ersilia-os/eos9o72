@@ -2,7 +2,7 @@
 
 CheMeleon encodes a molecule as 2,048 features with a directed message-passing neural network pretrained to reproduce deterministic Mordred descriptors for roughly a million PubChem molecules, a noise-free target rather than masked structure or experimental labels. Burns and colleagues at MIT reasoned that descriptors already carry low-noise chemical information, so predicting them gives a representation grounded in known chemistry while remaining learnable. It won most of 58 Polaris and MoleculeACE benchmarks but, like the models compared against it, still fails to resolve activity cliffs.
 
-This model was incorporated on 2025-07-01.Last packaged on 2026-08-31.
+This model was incorporated on 2025-07-01.Last packaged on 2026-10-22.
 
 ## Information
 ### Identifiers
@@ -50,12 +50,12 @@ _10 of 2048 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `34`
 - **Environment Size (Mb):** `1777`
-- **Image Size (Mb):** `1752.36`
+- **Image Size (Mb):** `1763.97`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.22`
-- 100 inputs: `27.53`
-- 10000 inputs: `397.92`
+- 10 inputs: `31.78`
+- 100 inputs: `24.88`
+- 10000 inputs: `362.29`
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/chemeleon/tree/main](https://github.com/JacksonBurns/chemeleon/tree/main)
