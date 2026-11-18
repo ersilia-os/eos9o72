@@ -2,7 +2,8 @@
 
 CheMeleon encodes a molecule as 2,048 features with a directed message-passing neural network pretrained to reproduce deterministic Mordred descriptors for roughly a million PubChem molecules, a noise-free target rather than masked structure or experimental labels. Burns and colleagues at MIT reasoned that descriptors already carry low-noise chemical information, so predicting them gives a representation grounded in known chemistry while remaining learnable. It won most of 58 Polaris and MoleculeACE benchmarks but, like the models compared against it, still fails to resolve activity cliffs.
 
-This model was incorporated on 2025-07-01.Last packaged on 2026-10-22.
+This model was incorporated on 2025-07-01.
+Last packaged on 2026-10-22.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 2048 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9o72](https://hub.docker.com/r/ersiliaos/eos9o72)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9o72.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9o72_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9o72_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `34`
